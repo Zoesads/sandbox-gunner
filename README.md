@@ -1,2 +1,2 @@
-# sandbox-gunner
-Source of my Sandbox Gunner game
+# Sandbox Gunner source
+Source of my game, [Sandbox Gunner](https://zoesads.itch.io/space-gunner)
