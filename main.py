@@ -390,7 +390,6 @@ if __name__ == "__main__":
         player_spawn_loc = [0,0]
         enemy_spawn_loc = []
         game_map_data = game_data[str(randint(0,bigK))]["map"]
-        # initialize tiles
         for y, row in enumerate(game_map_data):
             for x, val in enumerate(row):
                 if val < 1:
@@ -403,7 +402,6 @@ if __name__ == "__main__":
                     r = pygame.Rect(x * TILE_SIZE, y * TILE_SIZE, TILE_SIZE, TILE_SIZE)
                     tiles.append(r)
 
-        # initialize chunks (group tiles into 6x6 chunks)
         for y in range(0,30,CHUNK_SIZE):
             row = game_map_data[y:y+CHUNK_SIZE]
             for x in range(0,30,CHUNK_SIZE):
